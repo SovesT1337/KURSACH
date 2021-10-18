@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+1fac2c022bbae862c1c8b1fcf08596f7 CMakeFiles/KURSACH_autogen
