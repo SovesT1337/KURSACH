@@ -82,16 +82,28 @@
 	"HEADERS" : 
 	[
 		[
+			"/home/sovest/CLionProjects/KURSACH/include/battle.hpp",
+			"MU",
+			"6YEA5652QU/moc_battle.cpp",
+			null
+		],
+		[
 			"/home/sovest/CLionProjects/KURSACH/include/character.hpp",
 			"MU",
 			"6YEA5652QU/moc_character.cpp",
+			null
+		],
+		[
+			"/home/sovest/CLionProjects/KURSACH/include/enemy.hpp",
+			"MU",
+			"6YEA5652QU/moc_enemy.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "/home/sovest/CLionProjects/KURSACH/cmake-build-debug/KURSACH_autogen/include",
 	"MOC_COMPILATION_FILE" : "/home/sovest/CLionProjects/KURSACH/cmake-build-debug/KURSACH_autogen/mocs_compilation.cpp",
-	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_WIDGETS_LIB" ],
+	"MOC_DEFINITIONS" : [],
 	"MOC_DEPEND_FILTERS" : 
 	[
 		[
@@ -101,11 +113,7 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"/usr/include/x86_64-linux-gnu/qt5",
-		"/usr/include/x86_64-linux-gnu/qt5/QtCore",
-		"/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++",
-		"/usr/include/x86_64-linux-gnu/qt5/QtGui",
-		"/usr/include/x86_64-linux-gnu/qt5/QtWidgets",
+		"/home/sovest/CLionProjects/KURSACH/include",
 		"/usr/include/c++/9",
 		"/usr/include/x86_64-linux-gnu/c++/9",
 		"/usr/include/c++/9/backward",
@@ -127,7 +135,10 @@
 	],
 	"MOC_PREDEFS_FILE" : "/home/sovest/CLionProjects/KURSACH/cmake-build-debug/KURSACH_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
-	"MOC_SKIP" : [],
+	"MOC_SKIP" : 
+	[
+		"/home/sovest/CLionProjects/KURSACH/cmake-build-debug/demo_autogen/mocs_compilation.cpp"
+	],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 4,
 	"PARSE_CACHE_FILE" : "/home/sovest/CLionProjects/KURSACH/cmake-build-debug/CMakeFiles/KURSACH_autogen.dir/ParseCache.txt",
@@ -138,11 +149,19 @@
 	"SETTINGS_FILE" : "/home/sovest/CLionProjects/KURSACH/cmake-build-debug/CMakeFiles/KURSACH_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "/home/sovest/CLionProjects/KURSACH/demo/main.cpp", "MU", null ]
+		[
+			"/home/sovest/CLionProjects/KURSACH/sources/character.cpp",
+			"MU",
+			null
+		],
+		[ "/home/sovest/CLionProjects/KURSACH/sources/enemy.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],
-	"UIC_SKIP" : [],
+	"UIC_SKIP" : 
+	[
+		"/home/sovest/CLionProjects/KURSACH/cmake-build-debug/demo_autogen/mocs_compilation.cpp"
+	],
 	"UIC_UI_FILES" : [],
 	"VERBOSITY" : 0
 }

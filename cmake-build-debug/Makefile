@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named demo
+
+# Build rule for target.
+demo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 demo
+.PHONY : demo
+
+# fast build rule for target.
+demo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/build
+.PHONY : demo/fast
+
+#=============================================================================
 # Target rules for targets named KURSACH
 
 # Build rule for target.
@@ -128,6 +141,19 @@ KURSACH: cmake_check_build_system
 KURSACH/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/build
 .PHONY : KURSACH/fast
+
+#=============================================================================
+# Target rules for targets named demo_autogen
+
+# Build rule for target.
+demo_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 demo_autogen
+.PHONY : demo_autogen
+
+# fast build rule for target.
+demo_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo_autogen.dir/build.make CMakeFiles/demo_autogen.dir/build
+.PHONY : demo_autogen/fast
 
 #=============================================================================
 # Target rules for targets named KURSACH_autogen
@@ -171,7 +197,7 @@ demo/main.o: demo/main.cpp.o
 
 # target to build an object file
 demo/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/demo/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/main.cpp.o
 .PHONY : demo/main.cpp.o
 
 demo/main.i: demo/main.cpp.i
@@ -179,7 +205,7 @@ demo/main.i: demo/main.cpp.i
 
 # target to preprocess a source file
 demo/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/demo/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/main.cpp.i
 .PHONY : demo/main.cpp.i
 
 demo/main.s: demo/main.cpp.s
@@ -187,8 +213,80 @@ demo/main.s: demo/main.cpp.s
 
 # target to generate assembly for a file
 demo/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/demo/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo/main.cpp.s
 .PHONY : demo/main.cpp.s
+
+demo_autogen/mocs_compilation.o: demo_autogen/mocs_compilation.cpp.o
+.PHONY : demo_autogen/mocs_compilation.o
+
+# target to build an object file
+demo_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo_autogen/mocs_compilation.cpp.o
+.PHONY : demo_autogen/mocs_compilation.cpp.o
+
+demo_autogen/mocs_compilation.i: demo_autogen/mocs_compilation.cpp.i
+.PHONY : demo_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+demo_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo_autogen/mocs_compilation.cpp.i
+.PHONY : demo_autogen/mocs_compilation.cpp.i
+
+demo_autogen/mocs_compilation.s: demo_autogen/mocs_compilation.cpp.s
+.PHONY : demo_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+demo_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo_autogen/mocs_compilation.cpp.s
+.PHONY : demo_autogen/mocs_compilation.cpp.s
+
+sources/character.o: sources/character.cpp.o
+.PHONY : sources/character.o
+
+# target to build an object file
+sources/character.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/sources/character.cpp.o
+.PHONY : sources/character.cpp.o
+
+sources/character.i: sources/character.cpp.i
+.PHONY : sources/character.i
+
+# target to preprocess a source file
+sources/character.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/sources/character.cpp.i
+.PHONY : sources/character.cpp.i
+
+sources/character.s: sources/character.cpp.s
+.PHONY : sources/character.s
+
+# target to generate assembly for a file
+sources/character.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/sources/character.cpp.s
+.PHONY : sources/character.cpp.s
+
+sources/enemy.o: sources/enemy.cpp.o
+.PHONY : sources/enemy.o
+
+# target to build an object file
+sources/enemy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/sources/enemy.cpp.o
+.PHONY : sources/enemy.cpp.o
+
+sources/enemy.i: sources/enemy.cpp.i
+.PHONY : sources/enemy.i
+
+# target to preprocess a source file
+sources/enemy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/sources/enemy.cpp.i
+.PHONY : sources/enemy.cpp.i
+
+sources/enemy.s: sources/enemy.cpp.s
+.PHONY : sources/enemy.s
+
+# target to generate assembly for a file
+sources/enemy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/sources/enemy.cpp.s
+.PHONY : sources/enemy.cpp.s
 
 # Help Target
 help:
@@ -199,13 +297,24 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... KURSACH_autogen"
+	@echo "... demo_autogen"
 	@echo "... KURSACH"
+	@echo "... demo"
 	@echo "... KURSACH_autogen/mocs_compilation.o"
 	@echo "... KURSACH_autogen/mocs_compilation.i"
 	@echo "... KURSACH_autogen/mocs_compilation.s"
 	@echo "... demo/main.o"
 	@echo "... demo/main.i"
 	@echo "... demo/main.s"
+	@echo "... demo_autogen/mocs_compilation.o"
+	@echo "... demo_autogen/mocs_compilation.i"
+	@echo "... demo_autogen/mocs_compilation.s"
+	@echo "... sources/character.o"
+	@echo "... sources/character.i"
+	@echo "... sources/character.s"
+	@echo "... sources/enemy.o"
+	@echo "... sources/enemy.i"
+	@echo "... sources/enemy.s"
 .PHONY : help
 
 

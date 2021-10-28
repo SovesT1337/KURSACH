@@ -81,12 +81,15 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
+  "CMakeFiles/demo_autogen.dir/AutogenInfo.json"
   "CMakeFiles/KURSACH_autogen.dir/AutogenInfo.json"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/demo.dir/DependInfo.cmake"
   "CMakeFiles/KURSACH.dir/DependInfo.cmake"
+  "CMakeFiles/demo_autogen.dir/DependInfo.cmake"
   "CMakeFiles/KURSACH_autogen.dir/DependInfo.cmake"
   )

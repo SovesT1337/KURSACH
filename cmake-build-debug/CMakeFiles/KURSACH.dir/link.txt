@@ -1,1 +1,2 @@
-/usr/bin/c++ -g CMakeFiles/KURSACH.dir/KURSACH_autogen/mocs_compilation.cpp.o CMakeFiles/KURSACH.dir/demo/main.cpp.o -o KURSACH  /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8 /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8 /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8 
+/usr/bin/ar qc libKURSACH.a CMakeFiles/KURSACH.dir/KURSACH_autogen/mocs_compilation.cpp.o CMakeFiles/KURSACH.dir/sources/character.cpp.o CMakeFiles/KURSACH.dir/sources/enemy.cpp.o
+/usr/bin/ranlib libKURSACH.a

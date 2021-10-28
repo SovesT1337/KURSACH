@@ -37,8 +37,8 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/sovest/CLionProjects/KURSACH/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="KURSACH">
-				<Option output="/home/sovest/CLionProjects/KURSACH/cmake-build-debug/KURSACH" prefix_auto="0" extension_auto="0"/>
+			<Target title="demo">
+				<Option output="/home/sovest/CLionProjects/KURSACH/cmake-build-debug/demo" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/sovest/CLionProjects/KURSACH/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -47,12 +47,69 @@
 					<Add option="-DQT_CORE_LIB"/>
 					<Add option="-DQT_GUI_LIB"/>
 					<Add option="-DQT_WIDGETS_LIB"/>
-					<Add directory="/home/sovest/CLionProjects/KURSACH/cmake-build-debug/KURSACH_autogen/include"/>
+					<Add directory="/home/sovest/CLionProjects/KURSACH/cmake-build-debug/demo_autogen/include"/>
+					<Add directory="/home/sovest/CLionProjects/KURSACH/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
 					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/sovest/CLionProjects/KURSACH/cmake-build-debug/Makefile&quot;  VERBOSE=1 demo"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/sovest/CLionProjects/KURSACH/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/sovest/CLionProjects/KURSACH/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/sovest/CLionProjects/KURSACH/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="demo/fast">
+				<Option output="/home/sovest/CLionProjects/KURSACH/cmake-build-debug/demo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/sovest/CLionProjects/KURSACH/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_WIDGETS_LIB"/>
+					<Add directory="/home/sovest/CLionProjects/KURSACH/cmake-build-debug/demo_autogen/include"/>
+					<Add directory="/home/sovest/CLionProjects/KURSACH/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/sovest/CLionProjects/KURSACH/cmake-build-debug/Makefile&quot;  VERBOSE=1 demo/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/sovest/CLionProjects/KURSACH/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/sovest/CLionProjects/KURSACH/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/sovest/CLionProjects/KURSACH/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="KURSACH">
+				<Option output="/home/sovest/CLionProjects/KURSACH/cmake-build-debug/libKURSACH.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/sovest/CLionProjects/KURSACH/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/sovest/CLionProjects/KURSACH/cmake-build-debug/KURSACH_autogen/include"/>
+					<Add directory="/home/sovest/CLionProjects/KURSACH/include"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -69,21 +126,14 @@
 				</MakeCommands>
 			</Target>
 			<Target title="KURSACH/fast">
-				<Option output="/home/sovest/CLionProjects/KURSACH/cmake-build-debug/KURSACH" prefix_auto="0" extension_auto="0"/>
+				<Option output="/home/sovest/CLionProjects/KURSACH/cmake-build-debug/libKURSACH.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/sovest/CLionProjects/KURSACH/cmake-build-debug"/>
 				<Option object_output="./"/>
-				<Option type="1"/>
+				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DQT_CORE_LIB"/>
-					<Add option="-DQT_GUI_LIB"/>
-					<Add option="-DQT_WIDGETS_LIB"/>
 					<Add directory="/home/sovest/CLionProjects/KURSACH/cmake-build-debug/KURSACH_autogen/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/home/sovest/CLionProjects/KURSACH/include"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -94,6 +144,16 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j8 -f &quot;/home/sovest/CLionProjects/KURSACH/cmake-build-debug/Makefile&quot;  VERBOSE=1 KURSACH/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/sovest/CLionProjects/KURSACH/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/sovest/CLionProjects/KURSACH/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/sovest/CLionProjects/KURSACH/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="demo_autogen">
+				<Option working_dir="/home/sovest/CLionProjects/KURSACH/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/sovest/CLionProjects/KURSACH/cmake-build-debug/Makefile&quot;  VERBOSE=1 demo_autogen"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/sovest/CLionProjects/KURSACH/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/home/sovest/CLionProjects/KURSACH/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/sovest/CLionProjects/KURSACH/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -113,10 +173,25 @@
 		<Unit filename="/home/sovest/CLionProjects/KURSACH/cmake-build-debug/KURSACH_autogen/mocs_compilation.cpp">
 			<Option target="KURSACH"/>
 		</Unit>
+		<Unit filename="/home/sovest/CLionProjects/KURSACH/cmake-build-debug/demo_autogen/mocs_compilation.cpp">
+			<Option target="demo"/>
+		</Unit>
 		<Unit filename="/home/sovest/CLionProjects/KURSACH/demo/main.cpp">
+			<Option target="demo"/>
+		</Unit>
+		<Unit filename="/home/sovest/CLionProjects/KURSACH/include/battle.hpp">
 			<Option target="KURSACH"/>
 		</Unit>
 		<Unit filename="/home/sovest/CLionProjects/KURSACH/include/character.hpp">
+			<Option target="KURSACH"/>
+		</Unit>
+		<Unit filename="/home/sovest/CLionProjects/KURSACH/include/enemy.hpp">
+			<Option target="KURSACH"/>
+		</Unit>
+		<Unit filename="/home/sovest/CLionProjects/KURSACH/sources/character.cpp">
+			<Option target="KURSACH"/>
+		</Unit>
+		<Unit filename="/home/sovest/CLionProjects/KURSACH/sources/enemy.cpp">
 			<Option target="KURSACH"/>
 		</Unit>
 		<Unit filename="/home/sovest/CLionProjects/KURSACH/CMakeLists.txt">

@@ -13,8 +13,18 @@ find_package(Qt5 COMPONENTS
         Widgets
         REQUIRED)
 
-add_executable(KURSACH demo/main.cpp include/character.hpp)
-target_link_libraries(KURSACH
+add_library(${PROJECT_NAME} STATIC include/character.hpp sources/character.cpp include/enemy.hpp sources/enemy.cpp include/battle.hpp)
+
+add_executable(demo demo/main.cpp)
+
+target_include_directories(${PROJECT_NAME} PUBLIC
+        "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>"
+        "$<INSTALL_INTERFACE:include>"
+        )
+
+target_link_libraries(
+        demo
+        ${PROJECT_NAME}
         Qt5::Core
         Qt5::Gui
         Qt5::Widgets

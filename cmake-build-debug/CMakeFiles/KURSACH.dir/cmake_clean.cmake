@@ -3,9 +3,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/KURSACH_autogen.dir/ParseCache.txt"
   "KURSACH_autogen"
   "CMakeFiles/KURSACH.dir/KURSACH_autogen/mocs_compilation.cpp.o"
-  "CMakeFiles/KURSACH.dir/demo/main.cpp.o"
-  "KURSACH"
-  "KURSACH.pdb"
+  "CMakeFiles/KURSACH.dir/sources/character.cpp.o"
+  "CMakeFiles/KURSACH.dir/sources/enemy.cpp.o"
+  "libKURSACH.a"
+  "libKURSACH.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

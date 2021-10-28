@@ -79,39 +79,52 @@ CMakeFiles/KURSACH.dir/KURSACH_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/KURSACH.dir/KURSACH_autogen/mocs_compilation.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sovest/CLionProjects/KURSACH/cmake-build-debug/KURSACH_autogen/mocs_compilation.cpp -o CMakeFiles/KURSACH.dir/KURSACH_autogen/mocs_compilation.cpp.s
 
-CMakeFiles/KURSACH.dir/demo/main.cpp.o: CMakeFiles/KURSACH.dir/flags.make
-CMakeFiles/KURSACH.dir/demo/main.cpp.o: ../demo/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sovest/CLionProjects/KURSACH/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/KURSACH.dir/demo/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/KURSACH.dir/demo/main.cpp.o -c /home/sovest/CLionProjects/KURSACH/demo/main.cpp
+CMakeFiles/KURSACH.dir/sources/character.cpp.o: CMakeFiles/KURSACH.dir/flags.make
+CMakeFiles/KURSACH.dir/sources/character.cpp.o: ../sources/character.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sovest/CLionProjects/KURSACH/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/KURSACH.dir/sources/character.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/KURSACH.dir/sources/character.cpp.o -c /home/sovest/CLionProjects/KURSACH/sources/character.cpp
 
-CMakeFiles/KURSACH.dir/demo/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/KURSACH.dir/demo/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sovest/CLionProjects/KURSACH/demo/main.cpp > CMakeFiles/KURSACH.dir/demo/main.cpp.i
+CMakeFiles/KURSACH.dir/sources/character.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/KURSACH.dir/sources/character.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sovest/CLionProjects/KURSACH/sources/character.cpp > CMakeFiles/KURSACH.dir/sources/character.cpp.i
 
-CMakeFiles/KURSACH.dir/demo/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/KURSACH.dir/demo/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sovest/CLionProjects/KURSACH/demo/main.cpp -o CMakeFiles/KURSACH.dir/demo/main.cpp.s
+CMakeFiles/KURSACH.dir/sources/character.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/KURSACH.dir/sources/character.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sovest/CLionProjects/KURSACH/sources/character.cpp -o CMakeFiles/KURSACH.dir/sources/character.cpp.s
+
+CMakeFiles/KURSACH.dir/sources/enemy.cpp.o: CMakeFiles/KURSACH.dir/flags.make
+CMakeFiles/KURSACH.dir/sources/enemy.cpp.o: ../sources/enemy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sovest/CLionProjects/KURSACH/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/KURSACH.dir/sources/enemy.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/KURSACH.dir/sources/enemy.cpp.o -c /home/sovest/CLionProjects/KURSACH/sources/enemy.cpp
+
+CMakeFiles/KURSACH.dir/sources/enemy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/KURSACH.dir/sources/enemy.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sovest/CLionProjects/KURSACH/sources/enemy.cpp > CMakeFiles/KURSACH.dir/sources/enemy.cpp.i
+
+CMakeFiles/KURSACH.dir/sources/enemy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/KURSACH.dir/sources/enemy.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sovest/CLionProjects/KURSACH/sources/enemy.cpp -o CMakeFiles/KURSACH.dir/sources/enemy.cpp.s
 
 # Object files for target KURSACH
 KURSACH_OBJECTS = \
 "CMakeFiles/KURSACH.dir/KURSACH_autogen/mocs_compilation.cpp.o" \
-"CMakeFiles/KURSACH.dir/demo/main.cpp.o"
+"CMakeFiles/KURSACH.dir/sources/character.cpp.o" \
+"CMakeFiles/KURSACH.dir/sources/enemy.cpp.o"
 
 # External object files for target KURSACH
 KURSACH_EXTERNAL_OBJECTS =
 
-KURSACH: CMakeFiles/KURSACH.dir/KURSACH_autogen/mocs_compilation.cpp.o
-KURSACH: CMakeFiles/KURSACH.dir/demo/main.cpp.o
-KURSACH: CMakeFiles/KURSACH.dir/build.make
-KURSACH: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8
-KURSACH: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8
-KURSACH: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8
-KURSACH: CMakeFiles/KURSACH.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sovest/CLionProjects/KURSACH/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable KURSACH"
+libKURSACH.a: CMakeFiles/KURSACH.dir/KURSACH_autogen/mocs_compilation.cpp.o
+libKURSACH.a: CMakeFiles/KURSACH.dir/sources/character.cpp.o
+libKURSACH.a: CMakeFiles/KURSACH.dir/sources/enemy.cpp.o
+libKURSACH.a: CMakeFiles/KURSACH.dir/build.make
+libKURSACH.a: CMakeFiles/KURSACH.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sovest/CLionProjects/KURSACH/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libKURSACH.a"
+	$(CMAKE_COMMAND) -P CMakeFiles/KURSACH.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/KURSACH.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/KURSACH.dir/build: KURSACH
+CMakeFiles/KURSACH.dir/build: libKURSACH.a
 .PHONY : CMakeFiles/KURSACH.dir/build
 
 CMakeFiles/KURSACH.dir/clean:

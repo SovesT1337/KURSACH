@@ -1,14 +1,15 @@
 // Copyright by SovesT 2021
-// Created by sovest on 18.10.2021.
+// Created by sovest on 27.10.2021.
 //
 
-#ifndef KURSACH_CHARACTER_HPP
-#define KURSACH_CHARACTER_HPP
+#ifndef KURSACH_ENEMY_HPP
+#define KURSACH_ENEMY_HPP
 
 #include <string>
+
 using std::string;
 
-class Character {
+class Enemy{
 private:
     int HP;
     int MP;
@@ -17,9 +18,9 @@ private:
     int Level;
 
 public:
-    Character(int, int, int, int, int);
+    Enemy(int, int, int, int, int);
 
-    ~Character();
+    ~Enemy();
 
     int attack() const;
 
@@ -34,4 +35,12 @@ public:
     void level_up(int);
 };
 
-#endif //KURSACH_CHARACTER_HPP
+class Student : Enemy{
+    Student();
+
+    ~Student();
+
+    void fire_ball();
+};
+
+#endif //KURSACH_ENEMY_HPP
