@@ -2,6 +2,7 @@
 // Created by sovest on 30.10.2021.
 //
 
+
 #include <battle_graphics.hpp>
 
 MyButton::MyButton(QWidget *parent) : QWidget(parent) {

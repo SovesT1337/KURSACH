@@ -13,6 +13,8 @@ find_package(Qt5 COMPONENTS
         Widgets
         REQUIRED)
 
+
+
 add_library(${PROJECT_NAME} STATIC include/character.hpp sources/character.cpp include/enemy.hpp sources/enemy.cpp include/battle.hpp sources/battle.cpp sources/battle_graphics.cpp include/battle_graphics.hpp)
 
 add_executable(demo demo/main.cpp sources/battle_graphics.cpp)
@@ -22,6 +24,8 @@ target_include_directories(${PROJECT_NAME} PUBLIC
         "$<INSTALL_INTERFACE:include>"
         )
 
+qt5_use_modules(${PROJECT_NAME} Core Widgets Gui )
+
 target_link_libraries(
         demo
         ${PROJECT_NAME}
@@ -29,4 +33,3 @@ target_link_libraries(
         Qt5::Gui
         Qt5::Widgets
         )
-
