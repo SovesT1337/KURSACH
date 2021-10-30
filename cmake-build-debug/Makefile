@@ -240,6 +240,57 @@ demo_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo_autogen/mocs_compilation.cpp.s
 .PHONY : demo_autogen/mocs_compilation.cpp.s
 
+sources/battle.o: sources/battle.cpp.o
+.PHONY : sources/battle.o
+
+# target to build an object file
+sources/battle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/sources/battle.cpp.o
+.PHONY : sources/battle.cpp.o
+
+sources/battle.i: sources/battle.cpp.i
+.PHONY : sources/battle.i
+
+# target to preprocess a source file
+sources/battle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/sources/battle.cpp.i
+.PHONY : sources/battle.cpp.i
+
+sources/battle.s: sources/battle.cpp.s
+.PHONY : sources/battle.s
+
+# target to generate assembly for a file
+sources/battle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/sources/battle.cpp.s
+.PHONY : sources/battle.cpp.s
+
+sources/battle_graphics.o: sources/battle_graphics.cpp.o
+.PHONY : sources/battle_graphics.o
+
+# target to build an object file
+sources/battle_graphics.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/sources/battle_graphics.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/sources/battle_graphics.cpp.o
+.PHONY : sources/battle_graphics.cpp.o
+
+sources/battle_graphics.i: sources/battle_graphics.cpp.i
+.PHONY : sources/battle_graphics.i
+
+# target to preprocess a source file
+sources/battle_graphics.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/sources/battle_graphics.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/sources/battle_graphics.cpp.i
+.PHONY : sources/battle_graphics.cpp.i
+
+sources/battle_graphics.s: sources/battle_graphics.cpp.s
+.PHONY : sources/battle_graphics.s
+
+# target to generate assembly for a file
+sources/battle_graphics.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/sources/battle_graphics.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/sources/battle_graphics.cpp.s
+.PHONY : sources/battle_graphics.cpp.s
+
 sources/character.o: sources/character.cpp.o
 .PHONY : sources/character.o
 
@@ -309,6 +360,12 @@ help:
 	@echo "... demo_autogen/mocs_compilation.o"
 	@echo "... demo_autogen/mocs_compilation.i"
 	@echo "... demo_autogen/mocs_compilation.s"
+	@echo "... sources/battle.o"
+	@echo "... sources/battle.i"
+	@echo "... sources/battle.s"
+	@echo "... sources/battle_graphics.o"
+	@echo "... sources/battle_graphics.i"
+	@echo "... sources/battle_graphics.s"
 	@echo "... sources/character.o"
 	@echo "... sources/character.i"
 	@echo "... sources/character.s"

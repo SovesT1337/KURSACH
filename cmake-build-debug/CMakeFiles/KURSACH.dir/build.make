@@ -105,11 +105,39 @@ CMakeFiles/KURSACH.dir/sources/enemy.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/KURSACH.dir/sources/enemy.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sovest/CLionProjects/KURSACH/sources/enemy.cpp -o CMakeFiles/KURSACH.dir/sources/enemy.cpp.s
 
+CMakeFiles/KURSACH.dir/sources/battle.cpp.o: CMakeFiles/KURSACH.dir/flags.make
+CMakeFiles/KURSACH.dir/sources/battle.cpp.o: ../sources/battle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sovest/CLionProjects/KURSACH/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/KURSACH.dir/sources/battle.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/KURSACH.dir/sources/battle.cpp.o -c /home/sovest/CLionProjects/KURSACH/sources/battle.cpp
+
+CMakeFiles/KURSACH.dir/sources/battle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/KURSACH.dir/sources/battle.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sovest/CLionProjects/KURSACH/sources/battle.cpp > CMakeFiles/KURSACH.dir/sources/battle.cpp.i
+
+CMakeFiles/KURSACH.dir/sources/battle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/KURSACH.dir/sources/battle.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sovest/CLionProjects/KURSACH/sources/battle.cpp -o CMakeFiles/KURSACH.dir/sources/battle.cpp.s
+
+CMakeFiles/KURSACH.dir/sources/battle_graphics.cpp.o: CMakeFiles/KURSACH.dir/flags.make
+CMakeFiles/KURSACH.dir/sources/battle_graphics.cpp.o: ../sources/battle_graphics.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sovest/CLionProjects/KURSACH/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/KURSACH.dir/sources/battle_graphics.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/KURSACH.dir/sources/battle_graphics.cpp.o -c /home/sovest/CLionProjects/KURSACH/sources/battle_graphics.cpp
+
+CMakeFiles/KURSACH.dir/sources/battle_graphics.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/KURSACH.dir/sources/battle_graphics.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sovest/CLionProjects/KURSACH/sources/battle_graphics.cpp > CMakeFiles/KURSACH.dir/sources/battle_graphics.cpp.i
+
+CMakeFiles/KURSACH.dir/sources/battle_graphics.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/KURSACH.dir/sources/battle_graphics.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sovest/CLionProjects/KURSACH/sources/battle_graphics.cpp -o CMakeFiles/KURSACH.dir/sources/battle_graphics.cpp.s
+
 # Object files for target KURSACH
 KURSACH_OBJECTS = \
 "CMakeFiles/KURSACH.dir/KURSACH_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/KURSACH.dir/sources/character.cpp.o" \
-"CMakeFiles/KURSACH.dir/sources/enemy.cpp.o"
+"CMakeFiles/KURSACH.dir/sources/enemy.cpp.o" \
+"CMakeFiles/KURSACH.dir/sources/battle.cpp.o" \
+"CMakeFiles/KURSACH.dir/sources/battle_graphics.cpp.o"
 
 # External object files for target KURSACH
 KURSACH_EXTERNAL_OBJECTS =
@@ -117,9 +145,11 @@ KURSACH_EXTERNAL_OBJECTS =
 libKURSACH.a: CMakeFiles/KURSACH.dir/KURSACH_autogen/mocs_compilation.cpp.o
 libKURSACH.a: CMakeFiles/KURSACH.dir/sources/character.cpp.o
 libKURSACH.a: CMakeFiles/KURSACH.dir/sources/enemy.cpp.o
+libKURSACH.a: CMakeFiles/KURSACH.dir/sources/battle.cpp.o
+libKURSACH.a: CMakeFiles/KURSACH.dir/sources/battle_graphics.cpp.o
 libKURSACH.a: CMakeFiles/KURSACH.dir/build.make
 libKURSACH.a: CMakeFiles/KURSACH.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sovest/CLionProjects/KURSACH/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libKURSACH.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sovest/CLionProjects/KURSACH/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libKURSACH.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/KURSACH.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/KURSACH.dir/link.txt --verbose=$(VERBOSE)
 

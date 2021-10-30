@@ -13,9 +13,9 @@ find_package(Qt5 COMPONENTS
         Widgets
         REQUIRED)
 
-add_library(${PROJECT_NAME} STATIC include/character.hpp sources/character.cpp include/enemy.hpp sources/enemy.cpp include/battle.hpp)
+add_library(${PROJECT_NAME} STATIC include/character.hpp sources/character.cpp include/enemy.hpp sources/enemy.cpp include/battle.hpp sources/battle.cpp sources/battle_graphics.cpp include/battle_graphics.hpp)
 
-add_executable(demo demo/main.cpp)
+add_executable(demo demo/main.cpp sources/battle_graphics.cpp)
 
 target_include_directories(${PROJECT_NAME} PUBLIC
         "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>"

@@ -4,7 +4,8 @@
 
 #include <enemy.hpp>
 
-Enemy::Enemy(int HP_, int MP_, int Attack_, int Armor_, int Level_) {
+Enemy::Enemy(string Name_, int HP_, int MP_, int Attack_, int Armor_, int Level_) {
+    Name = Name_;
     HP = HP_;
     MP = MP_;
     Attack = Attack_;
@@ -37,8 +38,10 @@ void Enemy::level_up(int n) {
     Level += n;
 }
 
-Student::Student() : Enemy(20, 0, 10, 0, 1) {}
+//void Enemy::death() {
+//    Enemy::~Enemy();
+//}
 
-void Student::fire_ball() {
-    Enemy::magic_attack(20, 10);
+int Enemy::fire_ball() {
+    return Enemy::magic_attack(20, 10);
 }

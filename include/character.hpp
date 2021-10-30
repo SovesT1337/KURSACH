@@ -10,6 +10,7 @@ using std::string;
 
 class Character {
 private:
+    string Name;
     int HP;
     int MP;
     int Attack;
@@ -17,7 +18,7 @@ private:
     int Level;
 
 public:
-    Character(int, int, int, int, int);
+    Character(string, int, int, int, int, int);
 
     ~Character();
 
@@ -32,6 +33,8 @@ public:
     void recover_health(int);
 
     void level_up(int);
+
+    void death();
 };
 
 #endif //KURSACH_CHARACTER_HPP

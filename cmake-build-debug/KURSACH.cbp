@@ -182,10 +182,20 @@
 		<Unit filename="/home/sovest/CLionProjects/KURSACH/include/battle.hpp">
 			<Option target="KURSACH"/>
 		</Unit>
+		<Unit filename="/home/sovest/CLionProjects/KURSACH/include/battle_graphics.hpp">
+			<Option target="KURSACH"/>
+		</Unit>
 		<Unit filename="/home/sovest/CLionProjects/KURSACH/include/character.hpp">
 			<Option target="KURSACH"/>
 		</Unit>
 		<Unit filename="/home/sovest/CLionProjects/KURSACH/include/enemy.hpp">
+			<Option target="KURSACH"/>
+		</Unit>
+		<Unit filename="/home/sovest/CLionProjects/KURSACH/sources/battle.cpp">
+			<Option target="KURSACH"/>
+		</Unit>
+		<Unit filename="/home/sovest/CLionProjects/KURSACH/sources/battle_graphics.cpp">
+			<Option target="demo"/>
 			<Option target="KURSACH"/>
 		</Unit>
 		<Unit filename="/home/sovest/CLionProjects/KURSACH/sources/character.cpp">

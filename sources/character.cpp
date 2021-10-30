@@ -3,8 +3,10 @@
 //
 
 #include <character.hpp>
+#include <utility>
 
-Character::Character(int HP_, int MP_, int Attack_, int Armor_, int Level_) {
+Character::Character(string Name_, int HP_, int MP_, int Attack_, int Armor_, int Level_) {
+    Name = std::move(Name_);
     HP = HP_;
     MP = MP_;
     Attack = Attack_;
@@ -36,3 +38,7 @@ void Character::recover_mana(int heal) {
 void Character::level_up(int n) {
     Level += n;
 }
+
+//void Character::death() {
+//    Character::~Character();
+//}

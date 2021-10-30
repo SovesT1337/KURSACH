@@ -11,6 +11,7 @@ using std::string;
 
 class Enemy{
 private:
+    string Name;
     int HP;
     int MP;
     int Attack;
@@ -18,7 +19,7 @@ private:
     int Level;
 
 public:
-    Enemy(int, int, int, int, int);
+    Enemy(string, int, int, int, int, int);
 
     ~Enemy();
 
@@ -33,14 +34,10 @@ public:
     void recover_health(int);
 
     void level_up(int);
-};
 
-class Student : Enemy{
-    Student();
+    void death();
 
-    ~Student();
-
-    void fire_ball();
+    int fire_ball();
 };
 
 #endif //KURSACH_ENEMY_HPP

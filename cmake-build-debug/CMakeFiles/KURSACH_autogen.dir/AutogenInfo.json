@@ -88,6 +88,12 @@
 			null
 		],
 		[
+			"/home/sovest/CLionProjects/KURSACH/include/battle_graphics.hpp",
+			"MU",
+			"6YEA5652QU/moc_battle_graphics.cpp",
+			null
+		],
+		[
 			"/home/sovest/CLionProjects/KURSACH/include/character.hpp",
 			"MU",
 			"6YEA5652QU/moc_character.cpp",
@@ -149,6 +155,12 @@
 	"SETTINGS_FILE" : "/home/sovest/CLionProjects/KURSACH/cmake-build-debug/CMakeFiles/KURSACH_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "/home/sovest/CLionProjects/KURSACH/sources/battle.cpp", "MU", null ],
+		[
+			"/home/sovest/CLionProjects/KURSACH/sources/battle_graphics.cpp",
+			"MU",
+			null
+		],
 		[
 			"/home/sovest/CLionProjects/KURSACH/sources/character.cpp",
 			"MU",

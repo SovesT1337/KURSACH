@@ -1,4 +1,4 @@
-//
+// Copyright by SovesT 2021
 // Created by sovest on 27.10.2021.
 //
 
@@ -8,20 +8,20 @@
 #include <character.hpp>
 #include <enemy.hpp>
 #include <vector>
+#include <string>
 
+using std::string;
 using std::vector;
 
 class Battle{
 private:
+    vector<string> enemy;
+    vector<Character> character;
 
 public:
-    Battle();
+    Battle(vector<Enemy>, vector<Character>);
 
     ~Battle();
-
-    void enemy_turn();
-
-    void your_turn();
 };
 
 #endif //KURSACH_BATTLE_HPP

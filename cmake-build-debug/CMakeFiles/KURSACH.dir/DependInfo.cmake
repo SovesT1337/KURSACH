@@ -9,6 +9,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/sovest/CLionProjects/KURSACH/cmake-build-debug/KURSACH_autogen/mocs_compilation.cpp" "/home/sovest/CLionProjects/KURSACH/cmake-build-debug/CMakeFiles/KURSACH.dir/KURSACH_autogen/mocs_compilation.cpp.o"
+  "/home/sovest/CLionProjects/KURSACH/sources/battle.cpp" "/home/sovest/CLionProjects/KURSACH/cmake-build-debug/CMakeFiles/KURSACH.dir/sources/battle.cpp.o"
+  "/home/sovest/CLionProjects/KURSACH/sources/battle_graphics.cpp" "/home/sovest/CLionProjects/KURSACH/cmake-build-debug/CMakeFiles/KURSACH.dir/sources/battle_graphics.cpp.o"
   "/home/sovest/CLionProjects/KURSACH/sources/character.cpp" "/home/sovest/CLionProjects/KURSACH/cmake-build-debug/CMakeFiles/KURSACH.dir/sources/character.cpp.o"
   "/home/sovest/CLionProjects/KURSACH/sources/enemy.cpp" "/home/sovest/CLionProjects/KURSACH/cmake-build-debug/CMakeFiles/KURSACH.dir/sources/enemy.cpp.o"
   )
