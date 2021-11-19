@@ -6,8 +6,13 @@
 #define KURSACH_ENEMY_HPP
 
 #include <string>
+#include <utility>
+#include <QImage>
+#include <QRect>
 
+using std::pair;
 using std::string;
+using std::vector;
 
 class Enemy{
 private:
@@ -17,27 +22,28 @@ private:
     int Attack;
     int Armor;
     int Level;
+    QImage image[2];
+    QRect rect;
+    pair<int, int> location;
 
 public:
-    Enemy(string, int, int, int, int, int);
-
+    Enemy();
+    Enemy(string, pair<int, int>);
     ~Enemy();
-
     int attack() const;
-
     int magic_attack(int, int);
-
     void get_damage(int);
-
     void recover_mana(int);
-
     void recover_health(int);
-
     void level_up(int);
+    QImage getImage(int);
+    QRect getRect();
+    QRect* getRect_();
+    string getName();
+    pair<int, int> getLocation();
+    Enemy operator=(Enemy*);
+    int getHP();
 
-    void death();
-
-    int fire_ball();
 };
 
 #endif //KURSACH_ENEMY_HPP

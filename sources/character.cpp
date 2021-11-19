@@ -4,14 +4,46 @@
 
 #include <character.hpp>
 #include <utility>
+#include <map>
+#include <fstream>
 
-Character::Character(string Name_, int HP_, int MP_, int Attack_, int Armor_, int Level_) {
-    Name = std::move(Name_);
-    HP = HP_;
-    MP = MP_;
-    Attack = Attack_;
-    Armor = Armor_;
-    Level = Level_;
+using std::map;
+using std::ifstream;
+using std::ofstream;
+
+Character::Character() {
+    Name = "Clyde";
+    HP = 1;
+    MP = 1;
+    Attack = 1;
+    Armor = 1;
+    Level = 1;
+}
+
+Character::Character(string file, pair<int, int> loc) {
+    map<string, string> config;
+    ifstream input(file);
+    if (input.is_open()){
+        while (!input.eof()){
+            string st;
+            getline(input, st);
+            string st1 = st.substr(0, st.find(' '));
+            st.erase(0, st.find(' ') + 1);
+            string st2 = st.substr(2, st.size());
+            config[st1] = st2;
+        }
+    }
+    Name = std::move(config["Name"]);
+    HP = stoi(config["HP"]);
+    MP = stoi(config["MP"]);
+    Attack = stoi(config["Attack"]);
+    Armor = stoi(config["Armor"]);
+    Level = stoi(config["Level"]);
+    image[0].load(QString::fromStdString(config["Image1"]));
+    image[1].load(QString::fromStdString(config["Image2"]));
+    rect = image[0].rect();
+    location = loc;
+    rect.moveTo(location.first, location.second);
 }
 
 int Character::attack() const {
@@ -39,6 +71,37 @@ void Character::level_up(int n) {
     Level += n;
 }
 
-//void Character::death() {
-//    Character::~Character();
-//}
+Character Character::operator=(Character *rhs) {
+    HP = rhs->HP;
+    MP = rhs->MP;
+    Attack = rhs->Attack;
+    Armor = rhs->Armor;
+    Level = rhs->Level;
+    image[0] = rhs->image[0];
+    image[1] = rhs->image[1];
+    rect = rhs->rect;
+    location = rhs->location;
+    return *this;
+}
+
+QImage Character::getImage(int n) {
+    return image[n];
+}
+
+QRect Character::getRect() {
+    return rect;
+}
+
+QRect* Character::getRect_() {
+    return &rect;
+}
+
+pair<int, int> Character::getLocation() {
+    return location;
+}
+
+string Character::getName() {
+    return Name;
+}
+
+Character::~Character() = default;

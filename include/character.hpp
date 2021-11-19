@@ -6,7 +6,13 @@
 #define KURSACH_CHARACTER_HPP
 
 #include <string>
+#include <QImage>
+#include <QRect>
+#include <utility>
+
 using std::string;
+using std::pair;
+using std::vector;
 
 class Character {
 private:
@@ -16,25 +22,26 @@ private:
     int Attack;
     int Armor;
     int Level;
+    QImage image[2];
+    QRect rect;
+    pair<int, int> location;
 
 public:
-    Character(string, int, int, int, int, int);
-
+    Character();
+    Character(string, pair<int, int>);
     ~Character();
-
     int attack() const;
-
     int magic_attack(int, int);
-
     void get_damage(int);
-
     void recover_mana(int);
-
     void recover_health(int);
-
     void level_up(int);
-
-    void death();
+    QImage getImage(int);
+    QRect getRect();
+    QRect* getRect_();
+    string getName();
+    pair<int, int> getLocation();
+    Character operator=(Character*);
 };
 
 #endif //KURSACH_CHARACTER_HPP

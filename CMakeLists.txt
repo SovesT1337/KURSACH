@@ -1,10 +1,11 @@
-cmake_minimum_required(VERSION 3.20)
+cmake_minimum_required(VERSION 3.16)
 project(KURSACH)
 
-set(CMAKE_CXX_STANDARD 23)
+set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
+
 
 
 find_package(Qt5 COMPONENTS
@@ -15,7 +16,7 @@ find_package(Qt5 COMPONENTS
 
 
 
-add_library(${PROJECT_NAME} STATIC include/character.hpp sources/character.cpp include/enemy.hpp sources/enemy.cpp include/battle.hpp sources/battle.cpp sources/battle_graphics.cpp include/battle_graphics.hpp)
+add_library(${PROJECT_NAME} STATIC include/character.hpp sources/character.cpp include/enemy.hpp sources/enemy.cpp sources/battle_graphics.cpp include/battle_graphics.hpp)
 
 add_executable(demo demo/main.cpp sources/battle_graphics.cpp)
 
