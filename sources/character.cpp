@@ -59,6 +59,10 @@ void Character::get_damage(int damage) {
     HP -= damage - Armor;
 }
 
+string Character::getHP() {
+    return std::to_string(HP);
+}
+
 void Character::recover_health(int heal) {
     HP += heal;
 }

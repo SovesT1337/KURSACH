@@ -40,6 +40,7 @@ public:
     QRect getRect();
     QRect* getRect_();
     string getName();
+    string getHP();
     pair<int, int> getLocation();
     Character operator=(Character*);
 };

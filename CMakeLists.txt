@@ -16,7 +16,13 @@ find_package(Qt5 COMPONENTS
 
 
 
-add_library(${PROJECT_NAME} STATIC include/character.hpp sources/character.cpp include/enemy.hpp sources/enemy.cpp sources/battle_graphics.cpp include/battle_graphics.hpp)
+add_library(${PROJECT_NAME} STATIC 
+        include/character.hpp 
+        sources/character.cpp 
+        include/enemy.hpp 
+        sources/enemy.cpp 
+        sources/battle_graphics.cpp 
+        include/battle_graphics.hpp)
 
 add_executable(demo demo/main.cpp sources/battle_graphics.cpp)
 

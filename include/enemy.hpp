@@ -40,9 +40,9 @@ public:
     QRect getRect();
     QRect* getRect_();
     string getName();
+    string getHP();
     pair<int, int> getLocation();
     Enemy operator=(Enemy*);
-    int getHP();
 
 };
 

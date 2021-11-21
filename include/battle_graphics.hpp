@@ -25,30 +25,46 @@ private:
     int timerId;
 
     Enemy enemy1;
+    Enemy enemy2;
+    Enemy enemy3;
+    Enemy enemy4;
+    
     Character char1;
     Character char2;
     Character char3;
     Character char4;
+
+    QImage target;
+
+    // QButton btn1;
 
     QLabel *cname1;
     QLabel *cname2;
     QLabel *cname3;
     QLabel *cname4;
     QLabel *ename1;
+    QLabel *ename2;
+    QLabel *ename3;
+    QLabel *ename4;
 
     const pair<int, int> LOC1 = std::make_pair(1200, 200);
     const pair<int, int> LOC2 = std::make_pair(1400, 200);
     const pair<int, int> LOC3 = std::make_pair(1200, 400);
     const pair<int, int> LOC4 = std::make_pair(1400, 400);
     const pair<int, int> LOC5 = std::make_pair(400, 200);
+    const pair<int, int> LOC6 = std::make_pair(600, 200);
+    const pair<int, int> LOC7 = std::make_pair(400, 400);
+    const pair<int, int> LOC8 = std::make_pair(600, 400);
     static const int DELAY = 60;
 
     void LoadImages();
     void InitGame();
     void LoadLabels();
+    // void LoadButtons();
     void doDrowing();
     void LoadChar();
     void LoadEnemy();
+    void Attack();
 
 public:
     Battle(QWidget *parent = 0);

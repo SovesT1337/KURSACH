@@ -47,8 +47,24 @@ Enemy::Enemy(string file, pair<int, int> loc) {
     rect.moveTo(location.first, location.second);
 }
 
+QImage Enemy::getImage(int n) {
+    return image[n];
+}
+
+QRect Enemy::getRect() {
+    return rect;
+}
+
+QRect* Enemy::getRect_() {
+    return &rect;
+}
+
 int Enemy::attack() const {
     return Attack;
+}
+
+string Enemy::getHP(){
+    return std::to_string(HP);
 }
 
 int Enemy::magic_attack(int Attack_, int mana_usage) {
@@ -73,21 +89,21 @@ void Enemy::level_up(int n) {
     Level += n;
 }
 
-//void Enemy::death() {
-//    Enemy::~Enemy();
-//}
-
-int Enemy::fire_ball() {
-    return Enemy::magic_attack(20, 10);
+Enemy Enemy::operator=(Enemy *rhs) {
+    HP = rhs->HP;
+    MP = rhs->MP;
+    Attack = rhs->Attack;
+    Armor = rhs->Armor;
+    Level = rhs->Level;
+    image[0] = rhs->image[0];
+    image[1] = rhs->image[1];
+    rect = rhs->rect;
+    location = rhs->location;
+    return *this;
 }
 
-Enemy Enemy::operator=(Enemy * rhs) {
-    Enemy a(rhs->Name, rhs->HP, rhs->MP, rhs->Attack, rhs->Armor, rhs->Level);
-    return a;
-}
-
-int Enemy::getHP() {
-    return HP;
+string Enemy::getName() {
+    return Name;
 }
 
 Enemy::~Enemy() = default;
