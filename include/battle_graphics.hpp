@@ -65,6 +65,8 @@ private:
     void LoadChar();
     void LoadEnemy();
     void Attack();
+    void Recieve();
+    void randatk(int);
 
 public:
     Battle(QWidget *parent = 0);

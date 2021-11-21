@@ -91,6 +91,42 @@ void Battle::Attack()
         ename4->setText(QString::fromStdString(enemy4.getName() + ' ' + enemy4.getHP()));
         break;
     }
+    Recieve();
+}
+
+void Battle::randatk(int damage)
+{
+    switch (rand() % 4)
+    {
+    case 0:
+        char1.get_damage(damage);
+        break;
+    case 1:
+        char2.get_damage(damage);
+        break;
+    case 2:
+        char3.get_damage(damage);
+        break;
+    case 3:
+        char4.get_damage(damage);
+        break;
+    }
+}
+
+void Battle::Recieve()
+{
+    int damage1 = enemy1.attack(),
+        damage2 = enemy2.attack(),
+        damage3 = enemy3.attack(),
+        damage4 = enemy4.attack();
+    randatk(damage1);
+    randatk(damage2);
+    randatk(damage3);
+    randatk(damage4);
+    cname1->setText(QString::fromStdString(char1.getName() + ' ' + char1.getHP()));
+    cname2->setText(QString::fromStdString(char2.getName() + ' ' + char2.getHP()));
+    cname3->setText(QString::fromStdString(char3.getName() + ' ' + char3.getHP()));
+    cname4->setText(QString::fromStdString(char4.getName() + ' ' + char4.getHP()));
 }
 
 void Battle::LoadImages()
