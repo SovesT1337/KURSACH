@@ -7,11 +7,12 @@
 #include <map>
 #include <fstream>
 
-using std::map;
 using std::ifstream;
+using std::map;
 using std::ofstream;
 
-Character::Character() {
+Character::Character()
+{
     Name = "Clyde";
     HP = 1;
     MP = 1;
@@ -20,11 +21,14 @@ Character::Character() {
     Level = 1;
 }
 
-Character::Character(string file, pair<int, int> loc) {
+Character::Character(string file, pair<int, int> loc)
+{
     map<string, string> config;
     ifstream input(file);
-    if (input.is_open()){
-        while (!input.eof()){
+    if (input.is_open())
+    {
+        while (!input.eof())
+        {
             string st;
             getline(input, st);
             string st1 = st.substr(0, st.find(' '));
@@ -46,36 +50,44 @@ Character::Character(string file, pair<int, int> loc) {
     rect.moveTo(location.first, location.second);
 }
 
-int Character::attack() const {
+int Character::attack() const
+{
     return Attack;
 }
 
-int Character::magic_attack(int Attack_, int mana_usage) {
+int Character::magic_attack(int Attack_, int mana_usage)
+{
     MP -= mana_usage;
     return Attack_;
 }
 
-void Character::get_damage(int damage) {
+void Character::get_damage(int damage)
+{
     HP -= damage - Armor;
 }
 
-string Character::getHP() {
+string Character::getHP()
+{
     return std::to_string(HP);
 }
 
-void Character::recover_health(int heal) {
+void Character::recover_health(int heal)
+{
     HP += heal;
 }
 
-void Character::recover_mana(int heal) {
+void Character::recover_mana(int heal)
+{
     MP += heal;
 }
 
-void Character::level_up(int n) {
+void Character::level_up(int n)
+{
     Level += n;
 }
 
-Character Character::operator=(Character *rhs) {
+Character Character::operator=(Character *rhs)
+{
     HP = rhs->HP;
     MP = rhs->MP;
     Attack = rhs->Attack;
@@ -88,24 +100,31 @@ Character Character::operator=(Character *rhs) {
     return *this;
 }
 
-QImage Character::getImage(int n) {
+QImage Character::getImage(int n)
+{
     return image[n];
 }
 
-QRect Character::getRect() {
+QRect Character::getRect()
+{
     return rect;
 }
 
-QRect* Character::getRect_() {
+QRect *Character::getRect_()
+{
     return &rect;
 }
 
-pair<int, int> Character::getLocation() {
+pair<int, int> Character::getLocation()
+{
     return location;
 }
 
-string Character::getName() {
+string Character::getName()
+{
     return Name;
 }
 
 Character::~Character() = default;
+
+bool Character::dead() { return HP <= 0; }

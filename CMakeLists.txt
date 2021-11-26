@@ -22,6 +22,9 @@ add_library(${PROJECT_NAME} STATIC
         include/enemy.hpp 
         sources/enemy.cpp 
         sources/battle_graphics.cpp 
+        sources/battle_press_event.cpp
+        sources/battle_drowing.cpp
+        sources/battle_load.cpp
         include/battle_graphics.hpp)
 
 add_executable(demo demo/main.cpp sources/battle_graphics.cpp)

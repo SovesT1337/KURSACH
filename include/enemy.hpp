@@ -43,7 +43,7 @@ public:
     string getHP();
     pair<int, int> getLocation();
     Enemy operator=(Enemy*);
-
+    bool dead();
 };
 
 #endif //KURSACH_ENEMY_HPP

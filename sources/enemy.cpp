@@ -8,11 +8,12 @@
 #include <fstream>
 #include <iostream>
 
-using std::map;
 using std::ifstream;
+using std::map;
 using std::ofstream;
 
-Enemy::Enemy() {
+Enemy::Enemy()
+{
     Name = "Clyde";
     HP = 1;
     MP = 1;
@@ -21,11 +22,14 @@ Enemy::Enemy() {
     Level = 1;
 }
 
-Enemy::Enemy(string file, pair<int, int> loc) {
+Enemy::Enemy(string file, pair<int, int> loc)
+{
     map<string, string> config;
     ifstream input(file);
-    if (input.is_open()){
-        while (!input.eof()){
+    if (input.is_open())
+    {
+        while (!input.eof())
+        {
             string st;
             getline(input, st);
             string st1 = st.substr(0, st.find(' '));
@@ -47,49 +51,60 @@ Enemy::Enemy(string file, pair<int, int> loc) {
     rect.moveTo(location.first, location.second);
 }
 
-QImage Enemy::getImage(int n) {
+QImage Enemy::getImage(int n)
+{
     return image[n];
 }
 
-QRect Enemy::getRect() {
+QRect Enemy::getRect()
+{
     return rect;
 }
 
-QRect* Enemy::getRect_() {
+QRect *Enemy::getRect_()
+{
     return &rect;
 }
 
-int Enemy::attack() const {
+int Enemy::attack() const
+{
     return Attack;
 }
 
-string Enemy::getHP(){
+string Enemy::getHP()
+{
     return std::to_string(HP);
 }
 
-int Enemy::magic_attack(int Attack_, int mana_usage) {
+int Enemy::magic_attack(int Attack_, int mana_usage)
+{
     MP -= mana_usage;
     return Attack_;
 }
 
-void Enemy::get_damage(int damage) {
+void Enemy::get_damage(int damage)
+{
     this->HP -= damage - Armor;
     std::cout << damage << HP << std::endl;
 }
 
-void Enemy::recover_health(int heal) {
+void Enemy::recover_health(int heal)
+{
     HP += heal;
 }
 
-void Enemy::recover_mana(int heal) {
+void Enemy::recover_mana(int heal)
+{
     MP += heal;
 }
 
-void Enemy::level_up(int n) {
+void Enemy::level_up(int n)
+{
     Level += n;
 }
 
-Enemy Enemy::operator=(Enemy *rhs) {
+Enemy Enemy::operator=(Enemy *rhs)
+{
     HP = rhs->HP;
     MP = rhs->MP;
     Attack = rhs->Attack;
@@ -102,8 +117,11 @@ Enemy Enemy::operator=(Enemy *rhs) {
     return *this;
 }
 
-string Enemy::getName() {
+string Enemy::getName()
+{
     return Name;
 }
 
 Enemy::~Enemy() = default;
+
+bool Enemy::dead() { return HP <= 0; }

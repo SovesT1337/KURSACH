@@ -43,6 +43,7 @@ public:
     string getHP();
     pair<int, int> getLocation();
     Character operator=(Character*);
+    bool dead();
 };
 
 #endif //KURSACH_CHARACTER_HPP
