@@ -55,14 +55,14 @@ private:
     QLabel *ename4;
     QLabel *name[8] = {cname1, cname2, cname3, cname4, ename1, ename2, ename3, ename4};
 
-    const pair<int, int> LOC[8] = {std::make_pair(1200, 200),
-                                   std::make_pair(1400, 200),
-                                   std::make_pair(1200, 400),
-                                   std::make_pair(1400, 400),
-                                   std::make_pair(400, 200),
-                                   std::make_pair(600, 200),
-                                   std::make_pair(400, 400),
-                                   std::make_pair(600, 400)};
+    const pair<int, int> LOC[8] = {std::make_pair(1200, 150),
+                                   std::make_pair(1300, 300),
+                                   std::make_pair(1200, 450),
+                                   std::make_pair(1300, 600),
+                                   std::make_pair(500, 150),
+                                   std::make_pair(600, 300),
+                                   std::make_pair(500, 450),
+                                   std::make_pair(600, 600)};
     static const int DELAY = 60;
 
     void LoadImages();
@@ -84,6 +84,7 @@ protected:
     void timerEvent(QTimerEvent *);
     void keyPressEvent(QKeyEvent *);
     void mousePressEvent(QMouseEvent *);
+    void finishGame(QPainter *);
 };
 
 int battle(int argc, char *argv[]);

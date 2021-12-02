@@ -37,7 +37,9 @@ Battle::Battle(QWidget *parent)
 void Battle::paintEvent(QPaintEvent *e)
 {
     Q_UNUSED(e);
-
+    QPainter painter(this);
+    if (enemy[0].dead() and enemy[1].dead() and enemy[2].dead() and enemy[3].dead())
+        finishGame(&painter);
     doDrowing();
 }
 
@@ -58,7 +60,10 @@ void Battle::Attack()
     {
         int damage = stud[turn].attack();
         enemy[click2 - 4].get_damage(damage);
-        name[click2]->setText(QString::fromStdString(enemy[click2 - 4].getName() + ' ' + enemy[click2 - 4].getHP()));
+        if (enemy[click2 - 4].dead())
+            name[click2]->setText(QString::fromStdString(enemy[click2 - 4].getName() + " DEAD"));
+        else
+            name[click2]->setText(QString::fromStdString(enemy[click2 - 4].getName() + ' ' + enemy[click2 - 4].getHP()));
         // attacking = true;
         click2 = -1;
         turn++;
@@ -75,7 +80,7 @@ void Battle::randatk(int damage)
 void Battle::Recieve()
 {
     for (int i = 0; i < 4; ++i)
-    randatk(enemy[i].attack());
+        randatk(enemy[i].attack());
     turn = 0;
 }
 
@@ -87,4 +92,9 @@ void Battle::LoadImages()
 void Battle::InitGame()
 {
     timerId = startTimer(DELAY);
+}
+
+void Battle::finishGame(QPainter *)
+{
+    QApplication::quit();
 }
