@@ -52,7 +52,7 @@ Character::Character(string file, pair<int, int> loc)
 
 int Character::attack() const
 {
-    return Attack;
+    return Attack + (Attack * (rand() % 2) / 2);
 }
 
 int Character::magic_attack(int Attack_, int mana_usage)

@@ -13,6 +13,7 @@
 #include <QMouseEvent>
 #include <QKeyEvent>
 #include <QPainter>
+#include <unistd.h>
 
 #include <enemy.hpp>
 #include <character.hpp>
@@ -23,11 +24,12 @@ private:
     int click1;
     int click2;
     bool attacking;
+    bool recieving;
     int frame;
+    int step;
     int timerId;
     int turn;
-    int dx;
-    int dy;
+    int dx[8] = {0, 0, 0, 0, 0, 0, 0, 0};
 
     Enemy enemy1;
     Enemy enemy2;
@@ -75,6 +77,8 @@ private:
     void Attack();
     void Recieve();
     void randatk(int);
+    void drawchar(QPainter &, int, int);
+    void drawenemy(QPainter &, int, int);
 
 public:
     Battle(QWidget *parent = 0);

@@ -1,0 +1,8 @@
+Name = Viktor
+HP = 100
+MP = 10
+Attack = 30
+Armor = 9
+Level = 1
+Image1 = /home/sovest/CLionProjects/KURSACH/images/char3_1.png
+Image2 = /home/sovest/CLionProjects/KURSACH/images/char3_2.png

@@ -1,0 +1,6 @@
+/home/sovest/CLionProjects/KURSACH/build/CMakeFiles/rebuild_cache.dir
+/home/sovest/CLionProjects/KURSACH/build/CMakeFiles/edit_cache.dir
+/home/sovest/CLionProjects/KURSACH/build/CMakeFiles/demo.dir
+/home/sovest/CLionProjects/KURSACH/build/CMakeFiles/KURSACH.dir
+/home/sovest/CLionProjects/KURSACH/build/CMakeFiles/demo_autogen.dir
+/home/sovest/CLionProjects/KURSACH/build/CMakeFiles/KURSACH_autogen.dir
