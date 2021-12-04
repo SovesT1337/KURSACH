@@ -6,7 +6,6 @@
 #include <utility>
 #include <map>
 #include <fstream>
-#include <iostream>
 
 using std::ifstream;
 using std::map;
@@ -85,7 +84,6 @@ int Enemy::magic_attack(int Attack_, int mana_usage)
 void Enemy::get_damage(int damage)
 {
     this->HP -= damage - Armor;
-    std::cout << damage << HP << std::endl;
 }
 
 void Enemy::recover_health(int heal)

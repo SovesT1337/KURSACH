@@ -62,13 +62,6 @@ void Battle::Attack()
     if (click2 != -1 && !attacking && !recieving)
     {
         attacking = true;
-        int damage = stud[turn].attack();
-        enemy[click2 - 4].get_damage(damage);
-        if (enemy[click2 - 4].dead())
-            name[click2]->setText(QString::fromStdString(enemy[click2 - 4].getName() + " DEAD"));
-        else
-            name[click2]->setText(QString::fromStdString(enemy[click2 - 4].getName() + ' ' + enemy[click2 - 4].getHP()));
-        // click2 = -1;
     }
 }
 
@@ -84,10 +77,14 @@ void Battle::Recieve()
     if (!enemy[turn - 4].dead() && !recieving)
     {
         recieving = true;
-        randatk(enemy[turn - 4].attack());
+        // randatk(enemy[turn - 4].attack());
     }
     if (enemy[turn - 4].dead())
+    {
+        if (turn == 8)
+            turn = 0;
         turn++;
+    }
 }
 
 void Battle::InitGame()

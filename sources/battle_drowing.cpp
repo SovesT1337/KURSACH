@@ -44,6 +44,14 @@ void Battle::doDrowing()
             dx[turn] += 10;
         if (step >= 25 && step < 30)
             qp.drawImage(700, 500, bam);
+        if (step == 25)
+        {
+            enemy[click2 - 4].get_damage(stud[turn].attack());
+            if (enemy[click2 - 4].dead())
+                name[click2]->setText(QString::fromStdString(enemy[click2 - 4].getName() + " DEAD"));
+            else
+                name[click2]->setText(QString::fromStdString(enemy[click2 - 4].getName() + ' ' + enemy[click2 - 4].getHP()));
+        }
         if (step >= 30 && step < 50)
             dx[turn] -= 10;
         if (step == 50)
@@ -63,6 +71,8 @@ void Battle::doDrowing()
             dx[turn] -= 10;
         if (step >= 25 && step < 30)
             qp.drawImage(700, 500, bam);
+        if (step == 25)
+            randatk(enemy[turn - 4].attack());
         if (step >= 30 && step < 50)
             dx[turn] += 10;
         if (step == 50)
