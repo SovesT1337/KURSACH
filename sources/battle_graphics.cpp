@@ -68,7 +68,7 @@ void Battle::Attack()
             name[click2]->setText(QString::fromStdString(enemy[click2 - 4].getName() + " DEAD"));
         else
             name[click2]->setText(QString::fromStdString(enemy[click2 - 4].getName() + ' ' + enemy[click2 - 4].getHP()));
-        click2 = -1;
+        // click2 = -1;
     }
 }
 
@@ -88,11 +88,6 @@ void Battle::Recieve()
     }
     if (enemy[turn - 4].dead())
         turn++;
-}
-
-void Battle::LoadImages()
-{
-    target.load("/home/sovest/CLionProjects/KURSACH/images/target.png");
 }
 
 void Battle::InitGame()

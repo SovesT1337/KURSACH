@@ -42,6 +42,8 @@ void Battle::doDrowing()
         step++;
         if (step < 20)
             dx[turn] += 10;
+        if (step >= 25 && step < 30)
+            qp.drawImage(700, 500, bam);
         if (step >= 30 && step < 50)
             dx[turn] -= 10;
         if (step == 50)
@@ -50,6 +52,7 @@ void Battle::doDrowing()
             dx[turn] = 0;
             turn++;
             attacking = false;
+            click2 = -1;
         }
     }
 
@@ -58,6 +61,8 @@ void Battle::doDrowing()
         step++;
         if (step < 20)
             dx[turn] -= 10;
+        if (step >= 25 && step < 30)
+            qp.drawImage(700, 500, bam);
         if (step >= 30 && step < 50)
             dx[turn] += 10;
         if (step == 50)

@@ -42,3 +42,9 @@ void Battle::LoadButtons()
 
     connect(quitBtn, &QPushButton::clicked, this, &Battle::Attack);
 }
+
+void Battle::LoadImages()
+{
+    target.load("/home/sovest/CLionProjects/KURSACH/images/target.png");
+    bam.load("/home/sovest/CLionProjects/KURSACH/images/bam.png");
+}

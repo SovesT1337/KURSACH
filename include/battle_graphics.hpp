@@ -44,6 +44,7 @@ private:
     Character stud[4] = {stud1, stud2, stud3, stud4};
 
     QImage target;
+    QImage bam;
 
     QPushButton *btn1;
 
