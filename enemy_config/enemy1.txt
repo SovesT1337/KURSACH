@@ -1,7 +1,7 @@
 Name = Ehh
 HP = 100
 MP = 10
-Attack = 10
+Attack = 60
 Armor = 0
 Level = 1
 Image1 = /home/sovest/CLionProjects/KURSACH/images/enemy1_2.png

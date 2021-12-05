@@ -47,4 +47,5 @@ void Battle::LoadImages()
 {
     target.load("/home/sovest/CLionProjects/KURSACH/images/target.png");
     bam.load("/home/sovest/CLionProjects/KURSACH/images/bam.png");
+    grave.load("/home/sovest/CLionProjects/KURSACH/images/grave.png");
 }

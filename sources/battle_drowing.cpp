@@ -9,6 +9,8 @@ void Battle::drawchar(QPainter &qp, int i, int frame)
         else
             qp.drawImage(LOC[i].first - dx[i], LOC[i].second, stud[i].getImage(1));
     }
+    if (stud[i].dead())
+        qp.drawImage(LOC[i].first - dx[i], LOC[i].second, grave);
 }
 
 void Battle::drawenemy(QPainter &qp, int i, int frame)
@@ -20,6 +22,8 @@ void Battle::drawenemy(QPainter &qp, int i, int frame)
         else
             qp.drawImage(LOC[i + 4].first - dx[i + 4], LOC[i + 4].second, enemy[i].getImage(1));
     }
+    if (enemy[i].dead())
+        qp.drawImage(LOC[i + 4].first - dx[i + 4], LOC[i].second, grave);
 }
 
 void Battle::doDrowing()
@@ -30,8 +34,8 @@ void Battle::doDrowing()
     if (!attacking && !recieving)
     {
 
-        if (click1 != -1)
-            qp.drawImage(LOC[click1].first, LOC[click1].second, target);
+        // if (click1 != -1)
+        qp.drawImage(LOC[turn].first, LOC[turn].second, target);
 
         if (click2 != -1)
             qp.drawImage(LOC[click2].first, LOC[click2].second, target);
@@ -72,7 +76,10 @@ void Battle::doDrowing()
         if (step >= 25 && step < 30)
             qp.drawImage(700, 500, bam);
         if (step == 25)
+        {
             randatk(enemy[turn - 4].attack());
+            click2 = 0;
+        }
         if (step >= 30 && step < 50)
             dx[turn] += 10;
         if (step == 50)

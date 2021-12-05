@@ -45,6 +45,7 @@ private:
 
     QImage target;
     QImage bam;
+    QImage grave;
 
     QPushButton *btn1;
 

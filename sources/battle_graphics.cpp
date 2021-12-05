@@ -49,8 +49,10 @@ void Battle::timerEvent(QTimerEvent *e)
 {
     Q_UNUSED(e);
 
-    if (turn < 4 && attacking == 0)
+    if (turn < 4 && attacking == 0){
         click1 = turn;
+        if (stud[turn].dead()) turn++;
+        }
     if (turn >= 4 && attacking == 0)
         Recieve();
 
@@ -67,9 +69,9 @@ void Battle::Attack()
 
 void Battle::randatk(int damage)
 {
-    int i = rand() % 4;
-    stud[i].get_damage(damage);
-    name[i]->setText(QString::fromStdString(stud[i].getName() + ' ' + stud[i].getHP()));
+    click2 = rand() % 4;
+    stud[click2].get_damage(damage);
+    name[click2]->setText(QString::fromStdString(stud[click2].getName() + ' ' + stud[click2].getHP()));
 }
 
 void Battle::Recieve()
@@ -77,7 +79,6 @@ void Battle::Recieve()
     if (!enemy[turn - 4].dead() && !recieving)
     {
         recieving = true;
-        // randatk(enemy[turn - 4].attack());
     }
     if (enemy[turn - 4].dead())
     {
