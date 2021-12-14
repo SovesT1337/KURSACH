@@ -25,6 +25,8 @@ QPainter
 -
 unistd.h
 -
+time.h
+-
 enemy.hpp
 -
 character.hpp
@@ -48,6 +50,14 @@ utility
 QImage
 -
 QRect
+-
+
+/home/sovest/CLionProjects/KURSACH/demo/main.cpp
+QApplication
+-
+QPushButton
+-
+battle_graphics.hpp
 -
 
 /home/sovest/CLionProjects/KURSACH/sources/battle_graphics.cpp

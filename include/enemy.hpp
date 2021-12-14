@@ -22,7 +22,7 @@ private:
     int Attack;
     int Armor;
     int Level;
-    QImage image[2];
+    QImage image[4];
     QRect rect;
     pair<int, int> location;
 

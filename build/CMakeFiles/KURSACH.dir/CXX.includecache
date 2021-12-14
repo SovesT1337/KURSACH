@@ -25,6 +25,8 @@ QPainter
 -
 unistd.h
 -
+time.h
+-
 enemy.hpp
 -
 character.hpp
@@ -55,6 +57,14 @@ battle_graphics.hpp
 -
 
 /home/sovest/CLionProjects/KURSACH/sources/battle_graphics.cpp
+battle_graphics.hpp
+-
+
+/home/sovest/CLionProjects/KURSACH/sources/battle_load.cpp
+battle_graphics.hpp
+-
+
+/home/sovest/CLionProjects/KURSACH/sources/battle_press_event.cpp
 battle_graphics.hpp
 -
 

@@ -4,8 +4,8 @@ void Battle::keyPressEvent(QKeyEvent *e)
 {
     if (e->key() == Qt::Key_Escape)
         QApplication::quit();
-    if (e->key() == Qt::Key_Enter)
-        Attack();
+    if (e->key() == Qt::Key_Space && click2 != -1 && !attacking && !recieving)
+        attacking = true;
     if (e->key() == Qt::Key_1 && !enemy[0].dead())
         click2 = 4;
     if (e->key() == Qt::Key_2 && !enemy[1].dead())

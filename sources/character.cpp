@@ -45,6 +45,8 @@ Character::Character(string file, pair<int, int> loc)
     Level = stoi(config["Level"]);
     image[0].load(QString::fromStdString(config["Image1"]));
     image[1].load(QString::fromStdString(config["Image2"]));
+    image[2].load(QString::fromStdString(config["Image3"]));
+    image[3].load(QString::fromStdString(config["Image4"]));
     rect = image[0].rect();
     location = loc;
     rect.moveTo(location.first, location.second);

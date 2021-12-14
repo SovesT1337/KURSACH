@@ -14,6 +14,7 @@
 #include <QKeyEvent>
 #include <QPainter>
 #include <unistd.h>
+#include <time.h>
 
 #include <enemy.hpp>
 #include <character.hpp>
@@ -21,15 +22,18 @@
 class Battle : public QWidget
 {
 private:
-    int click1;
-    int click2;
-    bool attacking;
-    bool recieving;
-    int frame;
-    int step;
+    int click1 = -1;
+    int click2 = -1;
+    bool attacking = false;
+    bool recieving = false;
+    int frame = 0;
+    int step = 0;
+    int turn = 0;
     int timerId;
-    int turn;
+    int vtech[8] = {0, 0, 0, 0, 0, 0, 0, 0};
     int dx[8] = {0, 0, 0, 0, 0, 0, 0, 0};
+    int fx = 0;
+    int fy = 0;
 
     Enemy enemy1;
     Enemy enemy2;
@@ -43,9 +47,12 @@ private:
     Character stud4;
     Character stud[4] = {stud1, stud2, stud3, stud4};
 
+    QImage back;
     QImage target;
     QImage bam;
     QImage grave;
+    QImage arrow;
+    QImage fireball[2];
 
     QPushButton *btn1;
 
@@ -72,12 +79,13 @@ private:
     void LoadImages();
     void InitGame();
     void LoadLabels();
-    void LoadButtons();
     void doDrowing();
     void LoadChar();
     void LoadEnemy();
-    void Attack();
-    void Recieve();
+    void Attack(QPainter &);
+    void Range_Attack(QPainter &);
+    void Fireball(QPainter &);
+    void Recieve(QPainter &);
     void randatk(int);
     void drawchar(QPainter &, int, int);
     void drawenemy(QPainter &, int, int);
