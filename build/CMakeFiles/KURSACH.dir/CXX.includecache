@@ -6,32 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../include/battle_graphics.hpp
-QWidget
--
-QApplication
--
-QPushButton
--
-QLabel
--
-QImage
--
-QMouseEvent
--
-QKeyEvent
--
-QPainter
--
-unistd.h
--
-time.h
--
-enemy.hpp
--
-character.hpp
--
-
 ../include/character.hpp
 string
 -
@@ -52,20 +26,30 @@ QImage
 QRect
 -
 
-/home/sovest/CLionProjects/KURSACH/sources/battle_drowing.cpp
-battle_graphics.hpp
+../include/main_menu.hpp
+QWidget
+-
+QApplication
+-
+QPushButton
+-
+QLabel
+-
+QImage
+-
+QMouseEvent
+-
+QKeyEvent
+-
+QPainter
+-
+enemy.hpp
+-
+character.hpp
 -
 
-/home/sovest/CLionProjects/KURSACH/sources/battle_graphics.cpp
-battle_graphics.hpp
--
-
-/home/sovest/CLionProjects/KURSACH/sources/battle_load.cpp
-battle_graphics.hpp
--
-
-/home/sovest/CLionProjects/KURSACH/sources/battle_press_event.cpp
-battle_graphics.hpp
+/home/sovest/CLionProjects/KURSACH/sources/main_menu.cpp
+main_menu.hpp
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QRect

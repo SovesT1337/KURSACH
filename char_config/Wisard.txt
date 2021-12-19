@@ -1,4 +1,5 @@
 Name = Katya
+Type = Wisard
 HP = 100
 MP = 10
 Attack = 30

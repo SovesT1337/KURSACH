@@ -5,12 +5,14 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/sovest/CLionProjects/KURSACH/build/KURSACH_autogen/mocs_compilation.cpp" "/home/sovest/CLionProjects/KURSACH/build/CMakeFiles/KURSACH.dir/KURSACH_autogen/mocs_compilation.cpp.o"
+  "/home/sovest/CLionProjects/KURSACH/sources/battle_animation.cpp" "/home/sovest/CLionProjects/KURSACH/build/CMakeFiles/KURSACH.dir/sources/battle_animation.cpp.o"
   "/home/sovest/CLionProjects/KURSACH/sources/battle_drowing.cpp" "/home/sovest/CLionProjects/KURSACH/build/CMakeFiles/KURSACH.dir/sources/battle_drowing.cpp.o"
   "/home/sovest/CLionProjects/KURSACH/sources/battle_graphics.cpp" "/home/sovest/CLionProjects/KURSACH/build/CMakeFiles/KURSACH.dir/sources/battle_graphics.cpp.o"
   "/home/sovest/CLionProjects/KURSACH/sources/battle_load.cpp" "/home/sovest/CLionProjects/KURSACH/build/CMakeFiles/KURSACH.dir/sources/battle_load.cpp.o"
   "/home/sovest/CLionProjects/KURSACH/sources/battle_press_event.cpp" "/home/sovest/CLionProjects/KURSACH/build/CMakeFiles/KURSACH.dir/sources/battle_press_event.cpp.o"
   "/home/sovest/CLionProjects/KURSACH/sources/character.cpp" "/home/sovest/CLionProjects/KURSACH/build/CMakeFiles/KURSACH.dir/sources/character.cpp.o"
   "/home/sovest/CLionProjects/KURSACH/sources/enemy.cpp" "/home/sovest/CLionProjects/KURSACH/build/CMakeFiles/KURSACH.dir/sources/enemy.cpp.o"
+  "/home/sovest/CLionProjects/KURSACH/sources/main_menu.cpp" "/home/sovest/CLionProjects/KURSACH/build/CMakeFiles/KURSACH.dir/sources/main_menu.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

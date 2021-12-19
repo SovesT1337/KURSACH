@@ -243,6 +243,33 @@ demo_autogen/mocs_compilation.cpp.s:
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/demo_autogen/mocs_compilation.cpp.s
 .PHONY : demo_autogen/mocs_compilation.cpp.s
 
+sources/battle_animation.o: sources/battle_animation.cpp.o
+
+.PHONY : sources/battle_animation.o
+
+# target to build an object file
+sources/battle_animation.cpp.o:
+	$(MAKE) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/sources/battle_animation.cpp.o
+.PHONY : sources/battle_animation.cpp.o
+
+sources/battle_animation.i: sources/battle_animation.cpp.i
+
+.PHONY : sources/battle_animation.i
+
+# target to preprocess a source file
+sources/battle_animation.cpp.i:
+	$(MAKE) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/sources/battle_animation.cpp.i
+.PHONY : sources/battle_animation.cpp.i
+
+sources/battle_animation.s: sources/battle_animation.cpp.s
+
+.PHONY : sources/battle_animation.s
+
+# target to generate assembly for a file
+sources/battle_animation.cpp.s:
+	$(MAKE) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/sources/battle_animation.cpp.s
+.PHONY : sources/battle_animation.cpp.s
+
 sources/battle_drowing.o: sources/battle_drowing.cpp.o
 
 .PHONY : sources/battle_drowing.o
@@ -408,6 +435,36 @@ sources/enemy.cpp.s:
 	$(MAKE) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/sources/enemy.cpp.s
 .PHONY : sources/enemy.cpp.s
 
+sources/main_menu.o: sources/main_menu.cpp.o
+
+.PHONY : sources/main_menu.o
+
+# target to build an object file
+sources/main_menu.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/sources/main_menu.cpp.o
+	$(MAKE) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/sources/main_menu.cpp.o
+.PHONY : sources/main_menu.cpp.o
+
+sources/main_menu.i: sources/main_menu.cpp.i
+
+.PHONY : sources/main_menu.i
+
+# target to preprocess a source file
+sources/main_menu.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/sources/main_menu.cpp.i
+	$(MAKE) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/sources/main_menu.cpp.i
+.PHONY : sources/main_menu.cpp.i
+
+sources/main_menu.s: sources/main_menu.cpp.s
+
+.PHONY : sources/main_menu.s
+
+# target to generate assembly for a file
+sources/main_menu.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/sources/main_menu.cpp.s
+	$(MAKE) -f CMakeFiles/KURSACH.dir/build.make CMakeFiles/KURSACH.dir/sources/main_menu.cpp.s
+.PHONY : sources/main_menu.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -429,6 +486,9 @@ help:
 	@echo "... demo_autogen/mocs_compilation.o"
 	@echo "... demo_autogen/mocs_compilation.i"
 	@echo "... demo_autogen/mocs_compilation.s"
+	@echo "... sources/battle_animation.o"
+	@echo "... sources/battle_animation.i"
+	@echo "... sources/battle_animation.s"
 	@echo "... sources/battle_drowing.o"
 	@echo "... sources/battle_drowing.i"
 	@echo "... sources/battle_drowing.s"
@@ -447,6 +507,9 @@ help:
 	@echo "... sources/enemy.o"
 	@echo "... sources/enemy.i"
 	@echo "... sources/enemy.s"
+	@echo "... sources/main_menu.o"
+	@echo "... sources/main_menu.i"
+	@echo "... sources/main_menu.s"
 .PHONY : help
 
 

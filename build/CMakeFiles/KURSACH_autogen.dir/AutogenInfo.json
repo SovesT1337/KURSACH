@@ -21,6 +21,11 @@
 			"/home/sovest/CLionProjects/KURSACH/include/enemy.hpp",
 			"MU",
 			"6YEA5652QU/moc_enemy.cpp"
+		],
+		[
+			"/home/sovest/CLionProjects/KURSACH/include/main_menu.hpp",
+			"MU",
+			"6YEA5652QU/moc_main_menu.cpp"
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -76,6 +81,10 @@
 	"SETTINGS_FILE" : "/home/sovest/CLionProjects/KURSACH/build/CMakeFiles/KURSACH_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[
+			"/home/sovest/CLionProjects/KURSACH/sources/battle_animation.cpp",
+			"MU"
+		],
 		[ "/home/sovest/CLionProjects/KURSACH/sources/battle_drowing.cpp", "MU" ],
 		[
 			"/home/sovest/CLionProjects/KURSACH/sources/battle_graphics.cpp",
@@ -87,7 +96,8 @@
 			"MU"
 		],
 		[ "/home/sovest/CLionProjects/KURSACH/sources/character.cpp", "MU" ],
-		[ "/home/sovest/CLionProjects/KURSACH/sources/enemy.cpp", "MU" ]
+		[ "/home/sovest/CLionProjects/KURSACH/sources/enemy.cpp", "MU" ],
+		[ "/home/sovest/CLionProjects/KURSACH/sources/main_menu.cpp", "MU" ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

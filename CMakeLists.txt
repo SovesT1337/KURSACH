@@ -25,9 +25,12 @@ add_library(${PROJECT_NAME} STATIC
         sources/battle_press_event.cpp
         sources/battle_drowing.cpp
         sources/battle_load.cpp
-        include/battle_graphics.hpp)
+        sources/battle_animation.cpp
+        include/battle_graphics.hpp
+        sources/main_menu.cpp
+        include/main_menu.hpp)
 
-add_executable(demo demo/main.cpp sources/battle_graphics.cpp)
+add_executable(demo demo/main.cpp sources/battle_graphics.cpp sources/main_menu.cpp)
 
 target_include_directories(${PROJECT_NAME} PUBLIC
         "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>"

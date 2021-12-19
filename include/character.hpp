@@ -17,6 +17,7 @@ using std::vector;
 class Character {
 private:
     string Name;
+    string Type;
     int HP;
     int MP;
     int Attack;
@@ -40,6 +41,7 @@ public:
     QRect getRect();
     QRect* getRect_();
     string getName();
+    string getType();
     string getHP();
     pair<int, int> getLocation();
     Character operator=(Character*);

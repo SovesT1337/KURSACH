@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/sovest/CLionProjects/KURSACH/demo/main.cpp" "/home/sovest/CLionProjects/KURSACH/build/CMakeFiles/demo.dir/demo/main.cpp.o"
   "/home/sovest/CLionProjects/KURSACH/build/demo_autogen/mocs_compilation.cpp" "/home/sovest/CLionProjects/KURSACH/build/CMakeFiles/demo.dir/demo_autogen/mocs_compilation.cpp.o"
   "/home/sovest/CLionProjects/KURSACH/sources/battle_graphics.cpp" "/home/sovest/CLionProjects/KURSACH/build/CMakeFiles/demo.dir/sources/battle_graphics.cpp.o"
+  "/home/sovest/CLionProjects/KURSACH/sources/main_menu.cpp" "/home/sovest/CLionProjects/KURSACH/build/CMakeFiles/demo.dir/sources/main_menu.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

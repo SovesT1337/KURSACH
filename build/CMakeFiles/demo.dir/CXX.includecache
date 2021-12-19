@@ -52,6 +52,28 @@ QImage
 QRect
 -
 
+../include/main_menu.hpp
+QWidget
+-
+QApplication
+-
+QPushButton
+-
+QLabel
+-
+QImage
+-
+QMouseEvent
+-
+QKeyEvent
+-
+QPainter
+-
+enemy.hpp
+-
+character.hpp
+-
+
 /home/sovest/CLionProjects/KURSACH/demo/main.cpp
 QApplication
 -
@@ -59,9 +81,11 @@ QPushButton
 -
 battle_graphics.hpp
 -
+main_menu.hpp
+-
 
-/home/sovest/CLionProjects/KURSACH/sources/battle_graphics.cpp
-battle_graphics.hpp
+/home/sovest/CLionProjects/KURSACH/sources/main_menu.cpp
+main_menu.hpp
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QRect

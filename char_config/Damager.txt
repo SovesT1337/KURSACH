@@ -1,4 +1,5 @@
 Name = Ehh
+Type = Damager
 HP = 100
 MP = 10
 Attack = 30

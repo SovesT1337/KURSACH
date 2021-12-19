@@ -1,4 +1,5 @@
 Name = Viktor
+Type = Tank
 HP = 100
 MP = 10
 Attack = 30

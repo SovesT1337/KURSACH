@@ -65,15 +65,16 @@ private:
     QLabel *ename3;
     QLabel *ename4;
     QLabel *name[8] = {cname1, cname2, cname3, cname4, ename1, ename2, ename3, ename4};
+    QLabel *result;
 
-    const pair<int, int> LOC[8] = {std::make_pair(1200, 150),
-                                   std::make_pair(1300, 300),
-                                   std::make_pair(1200, 450),
-                                   std::make_pair(1300, 600),
-                                   std::make_pair(500, 150),
-                                   std::make_pair(600, 300),
-                                   std::make_pair(500, 450),
-                                   std::make_pair(600, 600)};
+    const pair<int, int> LOC[8] = {std::make_pair(1200, 550),
+                                   std::make_pair(1300, 650),
+                                   std::make_pair(1200, 750),
+                                   std::make_pair(1300, 850),
+                                   std::make_pair(600, 550),
+                                   std::make_pair(500, 650),
+                                   std::make_pair(600, 750),
+                                   std::make_pair(500, 850)};
     static const int DELAY = 60;
 
     void LoadImages();

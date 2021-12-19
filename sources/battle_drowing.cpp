@@ -22,7 +22,13 @@ void Battle::doDrowing()
     QPainter qp(this);
 
     qp.drawImage(0, 0, back);
-    
+
+    for (int i = 0; i < 4; ++i)
+        drawchar(qp, i, frame);
+
+    for (int i = 0; i < 4; ++i)
+        drawenemy(qp, i, frame);
+
     if (!attacking && !recieving)
     {
         qp.drawImage(LOC[turn].first, LOC[turn].second, target);
@@ -32,12 +38,14 @@ void Battle::doDrowing()
 
     if (attacking)
     {
-        if (turn == 1)
+        if (stud[turn].getType() == "Archer")
             Range_Attack(qp);
-        if (turn == 3)
-            Fireball(qp);
-        if (turn == 0 || turn == 2)
+        if (stud[turn].getType() == "Damager")
             Attack(qp);
+        if (stud[turn].getType() == "Tank")
+            Attack(qp);
+        if (stud[turn].getType() == "Wisard")
+            Fireball(qp);
     }
 
     if (recieving)
@@ -45,13 +53,5 @@ void Battle::doDrowing()
         Recieve(qp);
     }
 
-    for (int i = 0; i < 4; ++i)
-        drawchar(qp, i, frame);
-
-    for (int i = 0; i < 4; ++i)
-        drawenemy(qp, i, frame);
-
-    frame++;
-    if (frame == 6)
-        frame = 0;
+    frame = (frame + 1) % 6;
 }

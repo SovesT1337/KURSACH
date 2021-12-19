@@ -60,7 +60,8 @@
 		[
 			"/home/sovest/CLionProjects/KURSACH/sources/battle_graphics.cpp",
 			"MU"
-		]
+		],
+		[ "/home/sovest/CLionProjects/KURSACH/sources/main_menu.cpp", "MU" ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

@@ -1,4 +1,5 @@
 Name = Archer
+Type = Archer
 HP = 100
 MP = 10
 Attack = 30

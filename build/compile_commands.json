@@ -16,6 +16,11 @@
 },
 {
   "directory": "/home/sovest/CLionProjects/KURSACH/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/sovest/CLionProjects/KURSACH/build/demo_autogen/include -I/home/sovest/CLionProjects/KURSACH/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui  -g   -fPIC -std=gnu++2a -o CMakeFiles/demo.dir/sources/main_menu.cpp.o -c /home/sovest/CLionProjects/KURSACH/sources/main_menu.cpp",
+  "file": "/home/sovest/CLionProjects/KURSACH/sources/main_menu.cpp"
+},
+{
+  "directory": "/home/sovest/CLionProjects/KURSACH/build",
   "command": "/bin/x86_64-linux-gnu-g++-9  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/sovest/CLionProjects/KURSACH/build/KURSACH_autogen/include -I/home/sovest/CLionProjects/KURSACH/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui  -g   -fPIC -std=gnu++2a -o CMakeFiles/KURSACH.dir/KURSACH_autogen/mocs_compilation.cpp.o -c /home/sovest/CLionProjects/KURSACH/build/KURSACH_autogen/mocs_compilation.cpp",
   "file": "/home/sovest/CLionProjects/KURSACH/build/KURSACH_autogen/mocs_compilation.cpp"
 },
@@ -48,5 +53,15 @@
   "directory": "/home/sovest/CLionProjects/KURSACH/build",
   "command": "/bin/x86_64-linux-gnu-g++-9  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/sovest/CLionProjects/KURSACH/build/KURSACH_autogen/include -I/home/sovest/CLionProjects/KURSACH/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui  -g   -fPIC -std=gnu++2a -o CMakeFiles/KURSACH.dir/sources/battle_load.cpp.o -c /home/sovest/CLionProjects/KURSACH/sources/battle_load.cpp",
   "file": "/home/sovest/CLionProjects/KURSACH/sources/battle_load.cpp"
+},
+{
+  "directory": "/home/sovest/CLionProjects/KURSACH/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/sovest/CLionProjects/KURSACH/build/KURSACH_autogen/include -I/home/sovest/CLionProjects/KURSACH/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui  -g   -fPIC -std=gnu++2a -o CMakeFiles/KURSACH.dir/sources/battle_animation.cpp.o -c /home/sovest/CLionProjects/KURSACH/sources/battle_animation.cpp",
+  "file": "/home/sovest/CLionProjects/KURSACH/sources/battle_animation.cpp"
+},
+{
+  "directory": "/home/sovest/CLionProjects/KURSACH/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/sovest/CLionProjects/KURSACH/build/KURSACH_autogen/include -I/home/sovest/CLionProjects/KURSACH/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui  -g   -fPIC -std=gnu++2a -o CMakeFiles/KURSACH.dir/sources/main_menu.cpp.o -c /home/sovest/CLionProjects/KURSACH/sources/main_menu.cpp",
+  "file": "/home/sovest/CLionProjects/KURSACH/sources/main_menu.cpp"
 }
 ]

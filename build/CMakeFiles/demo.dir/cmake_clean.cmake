@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/demo.dir/demo/main.cpp.o"
   "CMakeFiles/demo.dir/demo_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/demo.dir/sources/battle_graphics.cpp.o"
+  "CMakeFiles/demo.dir/sources/main_menu.cpp.o"
   "demo"
   "demo.pdb"
 )

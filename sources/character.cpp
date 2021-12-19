@@ -14,6 +14,7 @@ using std::ofstream;
 Character::Character()
 {
     Name = "Clyde";
+    Type = "NULL";
     HP = 1;
     MP = 1;
     Attack = 1;
@@ -38,6 +39,7 @@ Character::Character(string file, pair<int, int> loc)
         }
     }
     Name = std::move(config["Name"]);
+    Type = std::move(config["Type"]);
     HP = stoi(config["HP"]);
     MP = stoi(config["MP"]);
     Attack = stoi(config["Attack"]);
@@ -99,6 +101,8 @@ Character Character::operator=(Character *rhs)
     image[1] = rhs->image[1];
     rect = rhs->rect;
     location = rhs->location;
+    Name = rhs->Name;
+    Type = rhs->Type;
     return *this;
 }
 
@@ -125,6 +129,11 @@ pair<int, int> Character::getLocation()
 string Character::getName()
 {
     return Name;
+}
+
+string Character::getType()
+{
+    return Type;
 }
 
 Character::~Character() = default;
