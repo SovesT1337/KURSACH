@@ -26,6 +26,11 @@ private:
     QImage image[4];
     QRect rect;
     pair<int, int> location;
+    string Config;
+    string Image1;
+    string Image2;
+    string Image3;
+    string Image4;
 
 public:
     Character();
@@ -37,6 +42,7 @@ public:
     void recover_mana(int);
     void recover_health(int);
     void level_up(int);
+    void save();
     QImage getImage(int);
     QRect getRect();
     QRect* getRect_();

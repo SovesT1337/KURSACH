@@ -21,7 +21,7 @@ void Battle::doDrowing()
 
     QPainter qp(this);
 
-    qp.drawImage(0, 0, back);
+    // qp.drawImage(0, 0, back);
 
     for (int i = 0; i < 4; ++i)
         drawchar(qp, i, frame);

@@ -2,18 +2,31 @@
 
 void Battle::LoadChar()
 {
-    stud[0] = Character("/home/sovest/CLionProjects/KURSACH/char_config/Damager.txt", LOC[0]);
-    stud[1] = Character("/home/sovest/CLionProjects/KURSACH/char_config/Archer.txt", LOC[1]);
-    stud[2] = Character("/home/sovest/CLionProjects/KURSACH/char_config/Tank.txt", LOC[2]);
-    stud[3] = Character("/home/sovest/CLionProjects/KURSACH/char_config/Wisard.txt", LOC[3]);
+    stud[0] = Character("/home/sovest/CLionProjects/KURSACH/config/Damager.txt", LOC[0]);
+    stud[1] = Character("/home/sovest/CLionProjects/KURSACH/config/Archer.txt", LOC[1]);
+    stud[2] = Character("/home/sovest/CLionProjects/KURSACH/config/Tank.txt", LOC[2]);
+    stud[3] = Character("/home/sovest/CLionProjects/KURSACH/config/Wisard.txt", LOC[3]);
 }
 
 void Battle::LoadEnemy()
 {
-    enemy[0] = Enemy("/home/sovest/CLionProjects/KURSACH/enemy_config/enemy1.txt", LOC[4]);
-    enemy[1] = Enemy("/home/sovest/CLionProjects/KURSACH/enemy_config/enemy1.txt", LOC[5]);
-    enemy[2] = Enemy("/home/sovest/CLionProjects/KURSACH/enemy_config/enemy1.txt", LOC[6]);
-    enemy[3] = Enemy("/home/sovest/CLionProjects/KURSACH/enemy_config/enemy1.txt", LOC[7]);
+    map<string, string> config;
+    ifstream input(configfile);
+    if (input.is_open())
+        while (!input.eof())
+        {
+            string st;
+            getline(input, st);
+            string st1 = st.substr(0, st.find(' '));
+            st.erase(0, st.find(' ') + 1);
+            string st2 = st.substr(2, st.size());
+            config[st1] = st2;
+        }
+    input.close();
+    enemy[0] = Enemy(config["Enemy1"], LOC[4]);
+    enemy[1] = Enemy(config["Enemy2"], LOC[5]);
+    enemy[2] = Enemy(config["Enemy3"], LOC[6]);
+    enemy[3] = Enemy(config["Enemy4"], LOC[7]);
 }
 
 void Battle::LoadLabels()
@@ -22,7 +35,7 @@ void Battle::LoadLabels()
     {
         name[i] = new QLabel(QString::fromStdString(stud[i].getName() + ' ' + stud[i].getHP()), this);
         name[i]->move(LOC[i].first, LOC[i].second);
-        name[i]->resize(100, 20);
+        name[i]->resize(200, 20);
         name[i]->show();
     }
 
@@ -44,4 +57,7 @@ void Battle::LoadImages()
     arrow.load("/home/sovest/CLionProjects/KURSACH/images/arrow.png");
     fireball[0].load("/home/sovest/CLionProjects/KURSACH/images/fireball_1.png");
     fireball[1].load("/home/sovest/CLionProjects/KURSACH/images/fireball_2.png");
+    youwin.load("/home/sovest/CLionProjects/KURSACH/images/youwin.png");
+    gameover.load("/home/sovest/CLionProjects/KURSACH/images/gameover.png");
+    levelup.load("/home/sovest/CLionProjects/KURSACH/images/levelup.png");
 }

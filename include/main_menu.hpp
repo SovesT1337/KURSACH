@@ -13,9 +13,14 @@
 #include <QMouseEvent>
 #include <QKeyEvent>
 #include <QPainter>
+#include <string>
+#include <fstream>
 
 #include <enemy.hpp>
 #include <character.hpp>
+
+using std::string;
+using std::ofstream;
 
 class Menu : public QWidget
 {
@@ -30,6 +35,7 @@ private:
     QPushButton *level02;
     QPushButton *level03;
 
+    string configfile = "/home/sovest/CLionProjects/KURSACH/config/Battle.txt";
     int timerId;
     static const int DELAY = 60;
 
@@ -43,6 +49,10 @@ protected:
     void paintEvent(QPaintEvent *);
     void timerEvent(QTimerEvent *);
     void doDrowing();
+    void Exit();
+    void LoadLevel1();
+    void LoadLevel2();
+    void LoadLevel3();
 };
 
 int menu(int argc, char *argv[]);

@@ -10,6 +10,8 @@
 using std::ifstream;
 using std::map;
 using std::ofstream;
+using std::endl;
+using std::to_string;
 
 Character::Character()
 {
@@ -45,13 +47,33 @@ Character::Character(string file, pair<int, int> loc)
     Attack = stoi(config["Attack"]);
     Armor = stoi(config["Armor"]);
     Level = stoi(config["Level"]);
-    image[0].load(QString::fromStdString(config["Image1"]));
-    image[1].load(QString::fromStdString(config["Image2"]));
-    image[2].load(QString::fromStdString(config["Image3"]));
-    image[3].load(QString::fromStdString(config["Image4"]));
+    Image1 = std::move(config["Image1"]);
+    Image2 = std::move(config["Image2"]);
+    Image3 = std::move(config["Image3"]);
+    Image4 = std::move(config["Image4"]);
+    image[0].load(QString::fromStdString(Image1));
+    image[1].load(QString::fromStdString(Image2));
+    image[2].load(QString::fromStdString(Image3));
+    image[3].load(QString::fromStdString(Image4));
     rect = image[0].rect();
     location = loc;
     rect.moveTo(location.first, location.second);
+    Config = std::move(file);
+}
+
+void Character::save(){
+    ofstream out(Config);
+    out << "Name = " << Name << endl;
+    out << "Type = " << Type << endl;
+    out << "HP = " << to_string(HP) << endl;
+    out << "MP = " << to_string(MP) << endl;
+    out << "Attack = " << to_string(Attack) << endl;
+    out << "Armor = " << to_string(Armor) << endl;
+    out << "Level = " << to_string(Level) << endl;
+    out << "Image1 = " << Image1 << endl;
+    out << "Image2 = " << Image2 << endl;
+    out << "Image3 = " << Image3 << endl;
+    out << "Image4 = " << Image4 << endl;
 }
 
 int Character::attack() const
